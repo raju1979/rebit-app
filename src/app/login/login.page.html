@@ -1,0 +1,50 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <!-- <ion-button color="primary" (click)='gotoHomePage()'>Primary</ion-button> -->
+  <div class="full-page">
+
+
+    <div class="p-10"></div>
+
+    <div class="ion-margin-top">
+      <img class="rebit-logo-img" src="../assets/img/rebit-logo.png" />
+    </div>
+
+    <div class="m-32">
+      <div id="login-container">
+        <p class="login-text">Login</p>
+        <div class="m-32">
+          <mat-form-field class="example-form-field">
+            <mat-label>Employee Id</mat-label>
+            <input matInput type="text" [(ngModel)]="email" autocomplete="off">
+            <button mat-button *ngIf="email" matSuffix mat-icon-button aria-label="Clear" (click)="email=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field class="example-form-field">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" [(ngModel)]="password" autocomplete="off">
+            <button mat-button *ngIf="password" matSuffix mat-icon-button aria-label="Clear" (click)="password=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+          <div class="ion-margin-top">
+            <ion-button expand="full" shape="round" color="light" (click)='gotoHomePage()'>Login</ion-button>
+          </div>
+          <div class="ion-text-right">
+            <ion-button fill="clear" size="small" color="light">Forget Password</ion-button>
+          </div>
+          <div class="ion-text-center ion-margin-top">
+            <p class="flex-vertical-center">Not registered With Us?, <ion-button fill="clear" size="small">Register Now</ion-button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

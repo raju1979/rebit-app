@@ -3,10 +3,10 @@ ion-menu ion-content {
 }
 
 ion-menu.md ion-content {
-  --padding-start: 8px;
-  --padding-end: 8px;
-  --padding-top: 20px;
-  --padding-bottom: 20px;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
 }
 
 ion-menu.md ion-list {
@@ -116,4 +116,24 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+#list-main {
+  width: 100%;
+  padding: 16px;
+  background: #025599;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.round {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: orange;
 }
